@@ -1,0 +1,3 @@
+target/
+massif.out.*
+.idea/
