@@ -9,7 +9,7 @@ use std::{str::FromStr, time::Duration};
 struct Cli {
     #[arg(long, env = "DATABASE_URL")]
     database_url: String,
-    #[arg(long, env = "PG_SSL_MODE_OPTION")]
+    #[arg(long, env = "PG_SSL_MODE")]
     pg_ssl_mode: PgSslModeOption,
     #[arg(long, default_value = "30", env = "DURATION_SECS")]
     duration_secs: u64,
